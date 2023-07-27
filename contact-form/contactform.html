@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div class="container">
+      <div class="box-form">
+        <form onsubmit="sendEmail(); reset(); return false;">
+         <h2><span>Get In Touch</span></h2>
+         <br>
+         <h6>Name:-</h6>
+         <input type="text" id="name" placeholder="Enter Your Name"    required> 
+         <h6>Email:-</h6>
+         <input type="text" id="Email" placeholder="Enter Your Email" required> 
+         <h6>Phone-no:-</h6>
+         <input type="text" id="phoneno" placeholder="Enter Your phone-no" required> 
+         <h6>Address:-</h6>
+         <input type="address" id="address" placeholder="Enter your address">
+         <h6>Message:-</h6>
+        <input type="text"   id="Message" placeholder="Enter Your Message" required>
+        <button type="submit" onclick="sendmail()"><i class="fa-regular fa-paper-plane"></i>Send Message</button> 
+      </form>
+        
+        
+        
+      </div>
+      <div class="background">
+        <h1>Let's discuss <br>
+        on something <span>cool</span><br>
+        together</h1>
+    </div>
+    <br>
+    <div class="contact-icons-1">
+        <p><i class="fa-regular fa-envelope" ></i>   vikas2121panwar@gmail.com</p> 
+        
+      </div>
+      <br>
+        <div class="contact-icons-1">
+        <p><i class="fa-sharp fa-solid fa-phone"></i> 761XXXXXXX</p>
+        
+         </div>
+         <br>
+        <div class="contact-icons-1">
+        <p><i class="fa-solid fa-location-dot"></i></i></i></i>  bahuwala dehradun</p>
+    </div>
+    <br>
+    <br>
+    <div class="fotter">
+      
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        
+    </div>
+</div>
+
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "vikas2122panwar@gmail.com",
+    Password : "ikash@123",
+    To : "mrvikas035@gmail.com",
+    From : document.getElementById("email").value,
+    Subject : "Form Enquiry",
+    Body : "Name:"+ document.getElementById("name").value
+    +"<br> Email: "+ document.getElementById("email").value
+    +"<br> Phone-no: "+ document.getElementById("phone-no").value
+    +"<br> Address: "+ document.getElementById("address").value
+    +"<br> Message: "+ document.getElementById("Message").value
+}).then(
+  message => alert("message sent succesfully")
+);
+  }
+</script> -->
+</body>
+</html>
